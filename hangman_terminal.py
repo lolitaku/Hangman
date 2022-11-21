@@ -6,14 +6,14 @@ from os import system
 my_file = open("little_prince_word_list.txt", "r")
 my_data = my_file.read()
 words = my_data.split()
-# print(words)
+print(words)
 
 lives = 10
 # entry_valid - set('abcdefghijklmnoprtsuvwxyz')
 
 name = input("Enter your name: ")
 print(f"Hello {name}") 
-print("__________________")
+print("---------")
 print("Try to guess the word in less than 10 attempts")
 
 def randomWord():
@@ -42,13 +42,14 @@ def playGame():
             print('You win!')
             break
         if incorrect >=10:
-            print('You lose!')
+            print('You lose! I expected more from you!')
             print(f'Sorry! The word was "{word}". Try again!!! :)')
             break
         print(progress)
         print('Guess a letter!')
 
         guess = input()
+     
         if guess not in guesses:
             guesses.append(guess)
         if guess in word:
@@ -59,7 +60,7 @@ def playGame():
                     progressEnd = progress[i+1:]
                     progress = progressStart + guess + progressEnd
         else:
-            print(f'The letter{guess} is not in the word. Try again.')
+            print(f'The letter {guess} is not in the word. Try again.')
             incorrect +=1
 
 if __name__ == '__main__':
@@ -68,8 +69,8 @@ if __name__ == '__main__':
         answer = input()
         if answer.lower() == 'yes':
            playGame()
-        if answer.lower == 'no':
-            print('Bye bye!')
+        if answer.lower() == 'no':
+            print('Bye bye! Have a good day!')
             break
 
-input("Press Enter to Leave: ")
+input("Press Enter to Leave! ")
