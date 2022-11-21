@@ -1,6 +1,11 @@
 import random
 from hangman_body import hangmanBody
 from os import system
+import logging
+
+logging.basicConfig(level=logging.INFO, filename="hangman_log.log", filemode = "w", 
+format="%(asctime)s - %(levelname)s - %(message)s")
+logging.info("info")
 
 # making list from txt file 
 my_file = open("little_prince_word_list.txt", "r")
@@ -47,7 +52,7 @@ def playGame() -> None:
             break
         if incorrect >=10:
             print('You lose! I expected more from you!')
-            print(f'Sorry! The word was "{word}". Try again!!! :)')
+            logging.info(f'Sorry! The word was "{word}". Try again!!! :)')
             break
         print(progress)
         
@@ -63,7 +68,7 @@ def playGame() -> None:
                     progressEnd = progress[i+1:]
                     progress = progressStart + guess + progressEnd
         else:
-            print(f'The letter {guess} is not in the word. Try again.')
+            logging.info(f'The letter {guess} is not in the word. Try again.')
             incorrect +=1
 
 if __name__ == '__main__':
