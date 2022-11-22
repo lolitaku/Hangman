@@ -1,6 +1,6 @@
-def hangmanBody(incorrect):
-    if incorrect == 0:
-        return ''
+from typing import Union
+
+def draw_hangman_body(incorrect: int) ->Union[str, None]:
 
     if incorrect == 1:
         return """

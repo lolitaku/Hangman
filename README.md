@@ -1,6 +1,6 @@
 # Hangman
 
-![Alt text](images/cartoon-stickman-stick-figure-man-260nw-2120145698.webp "Title")
+![Alt text](images/cartoon-stickman-stick-figure-man.webp "Title")
 
 ## About
 

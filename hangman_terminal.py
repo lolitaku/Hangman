@@ -1,17 +1,18 @@
 import random
-from hangman_body import hangmanBody
+from hangman_body import draw_hangman_body
 from os import system
 import logging
 
+
 # creating logging info file with data
-logging.basicConfig(level=logging.INFO, filename="hangman_log.log", filemode = "w", 
+logging.basicConfig(level=logging.INFO, filename="hangman.log", filemode = "w", 
 format="%(asctime)s - %(levelname)s - %(message)s")
 logging.info("info")
 
 # making list from txt file 
 my_file = open("little_prince_word_list.txt", "r")
 my_data = my_file.read()
-words = my_data.split()
+word = my_data.split()
 
 
 lives = 10
@@ -24,11 +25,11 @@ print("Try to guess the word in less than 10 attempts. Good luck!")
 
 # generate random word list
 # creating function to play the game
-def randomWord() -> str:
-    return words[random.randint(0, len(words) -1)]
+def get_random_word() -> str:
+    return word[random.randint(0, len(word) -1)]
 
-def playGame() -> None:
-    word = randomWord()
+def play_game() ->None:
+    word = get_random_word()
     progress = ''
     for i in range(len(word)):
         progress += '_'
@@ -46,7 +47,7 @@ def playGame() -> None:
                 guessesValue += ', '
             guessesValue += tries[i]
         print(f'Your guesses: {guessesValue}')
-        print(hangmanBody(incorrect))
+        print(draw_hangman_body(incorrect))
 
         if progress == word:
             print(progress)
@@ -80,7 +81,7 @@ if __name__ == '__main__':
         print('Hi! Want to play hangman? (yes / no)')
         answer = input()
         if answer.lower() == 'yes':
-           playGame()
+           play_game()
         if answer.lower() == 'no':
             print('Bye bye! Have a good day!')
             break
