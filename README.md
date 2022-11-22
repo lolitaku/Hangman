@@ -19,7 +19,8 @@
 ## Development
 
 Clone the repository.
-git@github.com:lolitaku/Hangman.git
+
+`git clone git@github.com:lolitaku/Hangman.git`
 
 ## Logging
 
