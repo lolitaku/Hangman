@@ -1,5 +1,7 @@
 # Hangman
 
+![Alt text](images/cartoon-stickman-stick-figure-man-260nw-2120145698.webp "Title")
+
 ## About
 
 1. Game play operates as a regular hangman game.
