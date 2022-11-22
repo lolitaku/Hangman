@@ -3,6 +3,7 @@ from hangman_body import hangmanBody
 from os import system
 import logging
 
+# creating logging info file with data
 logging.basicConfig(level=logging.INFO, filename="hangman_log.log", filemode = "w", 
 format="%(asctime)s - %(levelname)s - %(message)s")
 logging.info("info")
@@ -17,12 +18,12 @@ lives = 10
 
 # greeting with a player
 name = input("Enter your name: ")
-print(f"Hello {name}") 
+logging.info(f"Hello {name}") 
 print("---------")
 print("Try to guess the word in less than 10 attempts. Good luck!")
 
 # generate random word list
-#creating function to play the game
+# creating function to play the game
 def randomWord() -> str:
     return words[random.randint(0, len(words) -1)]
 
@@ -39,6 +40,7 @@ def playGame() -> None:
         _ = system('clear')
         # clear window game
         guessesValue = ''
+        
         for i in range(len(tries)):
             if i != len(tries) and i !=0:
                 guessesValue += ', '
@@ -53,6 +55,7 @@ def playGame() -> None:
         if incorrect >=10:
             print('You lose! I expected more from you!')
             logging.info(f'Sorry! The word was "{word}". Try again!!! :)')
+            print(f'Sorry! The word was "{word}". Try again!!! :)')
             break
         print(progress)
         
@@ -69,6 +72,7 @@ def playGame() -> None:
                     progress = progressStart + guess + progressEnd
         else:
             logging.info(f'The letter {guess} is not in the word. Try again.')
+            print(f'The letter {guess} is not in the word. Try again.')
             incorrect +=1
 
 if __name__ == '__main__':

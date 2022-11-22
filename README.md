@@ -12,4 +12,7 @@ Development
 Clone the repository.
 git@github.com:lolitaku/Hangman.git
 
+Logging
+Create a log file with this information: your name, your guesses and the word you are guessing.
+
 Enjoy the game :)!
