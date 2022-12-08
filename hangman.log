@@ -1,13 +1,12 @@
-2022-11-22 19:04:59,274 - INFO - info
-2022-11-22 19:05:04,575 - INFO - Hello Lolita
-2022-11-22 19:05:41,517 - INFO - The letter a is not in the word. Try again.
-2022-11-22 19:05:44,838 - INFO - The letter u is not in the word. Try again.
-2022-11-22 19:05:46,035 - INFO - The letter o is not in the word. Try again.
-2022-11-22 19:06:07,579 - INFO - The letter p is not in the word. Try again.
-2022-11-22 19:06:12,435 - INFO - The letter t is not in the word. Try again.
-2022-11-22 19:06:26,194 - INFO - The letter h is not in the word. Try again.
-2022-11-22 19:06:37,314 - INFO - The letter b is not in the word. Try again.
-2022-11-22 19:06:40,881 - INFO - The letter n is not in the word. Try again.
-2022-11-22 19:06:54,244 - INFO - The letter s is not in the word. Try again.
-2022-11-22 19:07:29,959 - INFO - The letter r is not in the word. Try again.
-2022-11-22 19:07:30,070 - INFO - Sorry! The word was "me.". Try again!!! :)
+2022-12-08 20:03:50,511 - INFO - The letter o is not in the word. Try again.
+2022-12-08 20:03:53,454 - INFO - The letter v is not in the word. Try again.
+2022-12-08 20:03:54,575 - INFO - The letter x is not in the word. Try again.
+2022-12-08 20:03:55,684 - INFO - The letter d is not in the word. Try again.
+2022-12-08 20:03:56,786 - INFO - The letter h is not in the word. Try again.
+2022-12-08 20:03:57,892 - INFO - The letter k is not in the word. Try again.
+2022-12-08 20:03:58,992 - INFO - You have already guessed that letter. Try again!
+2022-12-08 20:04:00,100 - INFO - The letter p is not in the word. Try again.
+2022-12-08 20:04:01,199 - INFO - The letter q is not in the word. Try again.
+2022-12-08 20:04:02,303 - INFO - The letter w is not in the word. Try again.
+2022-12-08 20:04:04,229 - INFO - The letter r is not in the word. Try again.
+2022-12-08 20:04:05,331 - INFO - Sorry! The word was "me". Try again!!! :)
