@@ -1,21 +1,22 @@
-import random
 from hangman_body import draw_hangman_body
 from os import system
 import logging
 import time
-
+import random
+from english_words import english_words_set
 
 # creating logging info file with data
-logging.basicConfig(level=logging.INFO, filename="hangman.log", filemode = "w", 
+logging.basicConfig(level=logging.INFO, filename="hangman.log", 
 format="%(asctime)s - %(levelname)s - %(message)s")
 
-# making list from txt file 
-my_file = open("little_prince_word_list.txt", "r")
-my_data = my_file.read()
-all_words = my_data.split()
 
+all_words = list(english_words_set)
 
-lives = 10
+def get_random_word(word_list: list) -> str:
+   generated_word = random.randint(0, len(word_list) -1)
+   return(word_list[generated_word])
+
+MAXIMUM_ALLOWED_GUESSES = 10
 
 # greeting with a player
 name = input("Enter your name: ")
@@ -23,12 +24,8 @@ print(f"Hello {name}")
 print("---------")
 print("Try to guess the word in less than 10 attempts. Good luck!")
 
-# generate random word list
+
 # creating function to play the game
-def get_random_word(word_list: list) -> str:
-    return word_list[random.randint(0, len(word_list) -1)]
-
-
 
 def play_game() -> None:
     incorrect = 0
@@ -39,15 +36,15 @@ def play_game() -> None:
         progress += '_'
     
     while True:
-        _ = system('clear')
+        system('clear')
         # clear window game
-        guessesValue = ''
+        guesses_value = ''
         
         for letter in range(len(tries)):
             if letter != len(tries) and letter !=0:
-                guessesValue += ', '
-            guessesValue += tries[letter]
-        print(f'Your guesses: {guessesValue}')
+                guesses_value += ', '
+            guesses_value += tries[letter]
+        print(f'Your guesses: {guesses_value}')
         print(draw_hangman_body(incorrect))
 
         if progress == word:
@@ -77,15 +74,18 @@ def play_game() -> None:
      
         if guess not in tries:
             tries.append(guess)
+
         if guess in word:
             # print(f'The letter {guess} is in the word.')
             for letter in range(len(word)):
                 if guess == word[letter]:
-                    progressStart = progress[0:letter]
-                    progressEnd = progress[letter+1:]
-                    progress = progressStart + guess + progressEnd
-
-        elif guess in guessesValue:
+                    def count_progress():
+                        progress_start = progress[0:letter]
+                        progress_end = progress[letter+1:]
+                        progress = progress_start + guess + progress_end
+                        count_progress(progress)
+                    
+        elif guess in guesses_value:
             print('You have already guessed that letter. Try again!')
             time.sleep(1.0)
         

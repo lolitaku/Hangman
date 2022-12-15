@@ -1,12 +1,52 @@
-2022-12-08 20:03:50,511 - INFO - The letter o is not in the word. Try again.
-2022-12-08 20:03:53,454 - INFO - The letter v is not in the word. Try again.
-2022-12-08 20:03:54,575 - INFO - The letter x is not in the word. Try again.
-2022-12-08 20:03:55,684 - INFO - The letter d is not in the word. Try again.
-2022-12-08 20:03:56,786 - INFO - The letter h is not in the word. Try again.
-2022-12-08 20:03:57,892 - INFO - The letter k is not in the word. Try again.
-2022-12-08 20:03:58,992 - INFO - You have already guessed that letter. Try again!
-2022-12-08 20:04:00,100 - INFO - The letter p is not in the word. Try again.
-2022-12-08 20:04:01,199 - INFO - The letter q is not in the word. Try again.
-2022-12-08 20:04:02,303 - INFO - The letter w is not in the word. Try again.
-2022-12-08 20:04:04,229 - INFO - The letter r is not in the word. Try again.
-2022-12-08 20:04:05,331 - INFO - Sorry! The word was "me". Try again!!! :)
+2022-12-13 17:44:38,638 - INFO - The letter o is not in the word. Try again.
+2022-12-13 17:44:39,760 - INFO - The letter u is not in the word. Try again.
+2022-12-13 17:44:41,984 - INFO - The letter v is not in the word. Try again.
+2022-12-13 17:44:43,111 - INFO - The letter d is not in the word. Try again.
+2022-12-13 17:45:00,396 - INFO - The letter y is not in the word. Try again.
+2022-12-13 17:45:01,891 - INFO - The letter w is not in the word. Try again.
+2022-12-13 17:45:03,637 - INFO - The letter q is not in the word. Try again.
+2022-12-13 17:45:05,493 - INFO - The letter c is not in the word. Try again.
+2022-12-13 17:45:07,095 - INFO - The letter s is not in the word. Try again.
+2022-12-13 17:45:08,610 - INFO - The letter k is not in the word. Try again.
+2022-12-13 17:45:09,718 - INFO - Sorry! The word was "little". Try again!!! :)
+2022-12-15 17:23:37,235 - INFO - The letter m is not in the word. Try again.
+2022-12-15 17:23:38,438 - INFO - The letter o is not in the word. Try again.
+2022-12-15 17:23:40,189 - INFO - The letter a is not in the word. Try again.
+2022-12-15 17:23:41,624 - INFO - The letter s is not in the word. Try again.
+2022-12-15 17:23:44,240 - INFO - The letter f is not in the word. Try again.
+2022-12-15 17:23:45,772 - INFO - The letter g is not in the word. Try again.
+2022-12-15 17:23:48,387 - INFO - The letter j is not in the word. Try again.
+2022-12-15 17:23:49,964 - INFO - The letter k is not in the word. Try again.
+2022-12-15 17:23:52,131 - INFO - The letter l is not in the word. Try again.
+2022-12-15 17:23:53,684 - INFO - The letter z is not in the word. Try again.
+2022-12-15 17:23:54,834 - INFO - Sorry! The word was "hundred". Try again!!! :)
+2022-12-15 18:11:52,008 - INFO - The letter t is not in the word. Try again.
+2022-12-15 18:11:53,229 - INFO - The letter y is not in the word. Try again.
+2022-12-15 18:11:55,560 - INFO - The letter e is not in the word. Try again.
+2022-12-15 18:11:56,976 - INFO - The letter w is not in the word. Try again.
+2022-12-15 18:11:58,709 - INFO - The letter q is not in the word. Try again.
+2022-12-15 18:11:59,943 - INFO - The letter a is not in the word. Try again.
+2022-12-15 18:12:05,177 - INFO - The letter f is not in the word. Try again.
+2022-12-15 18:12:06,867 - INFO - The letter h is not in the word. Try again.
+2022-12-15 18:12:08,610 - INFO - The letter j is not in the word. Try again.
+2022-12-15 18:12:14,265 - INFO - The letter k is not in the word. Try again.
+2022-12-15 18:12:15,430 - INFO - Sorry! The word was "And". Try again!!! :)
+2022-12-15 19:55:48,299 - INFO - The letter u is not in the word. Try again.
+2022-12-15 19:55:49,948 - INFO - The letter t is not in the word. Try again.
+2022-12-15 19:55:55,895 - INFO - The letter m is not in the word. Try again.
+2022-12-15 19:56:00,034 - INFO - The letter l is not in the word. Try again.
+2022-12-15 19:56:01,662 - INFO - The letter q is not in the word. Try again.
+2022-12-15 19:56:04,619 - INFO - The letter s is not in the word. Try again.
+2022-12-15 19:56:10,457 - INFO - Congratulation! You win! The word was "{word}" 
+2022-12-15 20:04:13,805 - INFO - The letter n is not in the word. Try again.
+2022-12-15 20:04:15,462 - INFO - The letter i is not in the word. Try again.
+2022-12-15 20:04:17,019 - INFO - The letter t is not in the word. Try again.
+2022-12-15 20:04:18,482 - INFO - The letter a is not in the word. Try again.
+2022-12-15 20:04:19,844 - INFO - The letter s is not in the word. Try again.
+2022-12-15 20:04:21,386 - INFO - The letter m is not in the word. Try again.
+2022-12-15 20:04:24,503 - INFO - The letter x is not in the word. Try again.
+2022-12-15 20:04:25,963 - INFO - The letter z is not in the word. Try again.
+2022-12-15 20:04:27,500 - INFO - The letter c is not in the word. Try again.
+2022-12-15 20:04:28,903 - INFO - The letter v is not in the word. Try again.
+2022-12-15 20:04:29,996 - INFO - Sorry! The word was "bebop". Try again!!! :)
+2022-12-15 20:40:06,845 - INFO - The letter k is not in the word. Try again.
