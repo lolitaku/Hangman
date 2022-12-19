@@ -14,7 +14,7 @@ all_words = list(english_words_set)
 
 def get_random_word(word_list: list) -> str:
    generated_word = random.randint(0, len(word_list) -1)
-   return(word_list[generated_word])
+   return word_list[generated_word]
 
 MAXIMUM_ALLOWED_GUESSES = 10
 
@@ -49,8 +49,8 @@ def play_game() -> None:
 
         if progress == word:
             print(progress)
-            logging.info('Congratulation! You win! The word was "{word}" ')
-            print('Congratulation! You win! The word was "{word}" ')
+            logging.info(f'Congratulation! You win! The word was "{word}" ')
+            print(f'Congratulation! You win! The word was "{word}" ')
             break
         if incorrect >=10:
             print('You lose! I expected more from you!')
@@ -79,11 +79,10 @@ def play_game() -> None:
             # print(f'The letter {guess} is in the word.')
             for letter in range(len(word)):
                 if guess == word[letter]:
-                    def count_progress():
                         progress_start = progress[0:letter]
                         progress_end = progress[letter+1:]
                         progress = progress_start + guess + progress_end
-                        count_progress(progress)
+
                     
         elif guess in guesses_value:
             print('You have already guessed that letter. Try again!')
